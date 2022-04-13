@@ -5,7 +5,7 @@
 #ifndef HOMEWORK37_4_2_REMOTEMAINWINDOW_H
 #define HOMEWORK37_4_2_REMOTEMAINWINDOW_H
 #include <QMainWindow>
-#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QLabel>
 
 class RemoteMainWindow : public QMainWindow{
     Q_OBJECT
@@ -14,7 +14,7 @@ private:
 
 public:
     RemoteMainWindow(QWidget *parent = nullptr) : QMainWindow(parent){}
-    QLineEdit * lineEdit = nullptr;
+    QLabel * lineEdit = nullptr;
     void setChNumber(int ch){ chNumber = ch;}
     int getChNumber(){return chNumber;}
     int getVolume(){return volume;}
